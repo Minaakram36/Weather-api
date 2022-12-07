@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    /* line-height: 1.9; */
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.display-temp{
+    height: 100vh;
+    background-image: url(images/france.svg);
+    background-size: cover;
+}
+.bg-color{
+    height: 100%;
+    background-color: rgba(49, 153, 171, 0.575);
+}
+
+.display-temp .search{
+    width: 42%;
+    
+}
+
+
+.cards-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.cards-cont .custcard{
+    width: calc((80% - 60px)/3);
+    color:white;
+
+    
+}
+.cards-cont .custcard .custcardheader{
+    background-color: #374850;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius:  8px 8px 0px 0px;
+}
+.cards-cont .custcard .custcardheader p{
+    margin: 0;
+}
+.cards-cont .custcard .custcardbody{
+    background-color: #3199ab;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px 0px 8px 8px;
+    
+}
+
+.nextcards{
+    text-align: center;
+}
+/* .details{
+    margin-bottom: 10px;
+} */
+
+.details i{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+
+/* start footer */
+footer {
+    background-color: #374850;
+    padding: 10px 0;
+}
+
+footer i {
+    margin-right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+footer i:hover {color: #37aec3;}
+/* end footer */
+
+
+@media (max-width: 991px) 
+{
+    
+    .cards-cont{
+        
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .cards-cont .custcard{
+        width: 80%;
+        
+        
+    }
+   
+    .display-temp .search{
+        width: 100%;
+    }
+
+    .display-temp{
+        height: auto;
+       
+    }
+}
+
+
